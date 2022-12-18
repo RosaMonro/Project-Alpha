@@ -54,6 +54,11 @@ h6,
   color: #AB0232;
 }
 
+.card__title {
+  color: #AB0232;
+}
+
+
 /*--------------------PORTADA---------------*/
 
 .cover {
@@ -90,13 +95,41 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center /*pq no es sufi con justify.content*/
+  align-items: center /*pq no es sufi con justify.content???*/
 }
 
 .icon {
-  color: #AB0232;
+  fill: #AB0232;
   height: 95px;
   width: 99px;
 }
 
 /*cómo cambio color de icono???*/
+
+/*-----------------MI HISTORIA-----------*/
+
+.content__photo-historia {
+  display: flex;
+}
+
+
+/*-----------BOTÓN SUBMIT--------*/
+
+[type="submit"] {
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #1C1C1E;
+  padding: 10px 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+}
+
+[type="submit"]:hover {
+  background-color: #AF0F3C;
+  border: #FFFFFF 0.2rem solid;
+  color: #FFFFFF;
+}
+  
