@@ -76,13 +76,13 @@ h6,
 }
 
 
-/*---------------- márgenes del main -------------*/
+/*---------------- MÁRGENES DEL MAIN -------------*/
 
 main {
   padding: 0 15rem;
 }
 
-/*--------------- SOBRE MÍ -----------------*/
+/*-------------------- SOBRE MÍ ----------------------*/
 
 .content-cards {
   display: flex;
@@ -106,14 +106,36 @@ main {
 
 /*cómo cambio color de icono???*/
 
-/*-----------------MI HISTORIA-----------*/
+/*----------------------MI HISTORIA---------------------*/
 
 .content__photo-historia {
   display: flex;
 }
 
+/*---------------------QUÉ SE HACER ---------------------*/
 
-/*-----------BOTÓN SUBMIT--------*/
+ul {
+  list-style-type: none;
+  list-style-position: outside; 
+}
+
+.content__icon-tool {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-tool {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+}
+
+/*----------------------QUÉ ME DEFINE-------------------*/
+
+
+
+/*----------------------BOTÓN SUBMIT--------------------*/
 
 [type="submit"] {
   border: none;
