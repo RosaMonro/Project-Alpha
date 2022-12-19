@@ -47,7 +47,7 @@ h6,
 }
 
 .light-italic {
-  font-weight: 200;
+  font-weight: 250;
   font-style: italic;
   padding: 4.8rem;
   text-align: center;
@@ -133,7 +133,31 @@ ul {
 
 /*----------------------QUÉ ME DEFINE-------------------*/
 
+.content__strengths {
+  display: flex;
+  border: green 2px solid;
+  flex: 0 0 50%;
+}
 
+.icon-and-title {
+  display: flex;
+  align-items: center;
+}
+
+.point {
+  height: 33px;
+  width: 33px;
+  margin: 0.8rem;
+}
+
+.color-word {
+  color: #AB0232;
+  font-weight: 700;
+}
+
+.ademas {
+  text-align: center;
+}
 
 /*----------------------BOTÓN SUBMIT--------------------*/
 
