@@ -46,9 +46,12 @@ h6,
   font-weight: 360;
 }
 
-.light-italic {
+.font--light-italic {
   font-weight: 250;
   font-style: italic;
+}
+
+.style-headers {
   padding: 4.8rem;
   text-align: center;
   color: #AB0232;
@@ -58,6 +61,9 @@ h6,
   color: #AB0232;
 }
 
+.text-center {
+  text-align: center;
+}
 
 /*--------------------GRID---------------*/
 .grid {
@@ -122,10 +128,22 @@ main {
 
 /*cómo cambio color de icono???*/
 
+.style-title {
+  border-bottom: #AB0232 4px solid;
+  padding-bottom: 20px;
+  width: fit-content;
+}
+
 /*----------------------MI HISTORIA---------------------*/
 
-.content__photo-historia {
+.content__photo-story {
   display: flex;
+}
+
+.bg-style {
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  padding: 5rem;
 }
 
 /*---------------------QUÉ SE HACER ---------------------*/
@@ -149,11 +167,6 @@ ul {
 
 /*----------------------QUÉ ME DEFINE-------------------*/
 
-
-definition {
-
-}
-
   .definition__header {
     display: flex;
     align-items: center;
@@ -165,18 +178,9 @@ definition {
       margin-right: 0.8rem;
     }
 
-  .definition__text {
-    
-  }
-
-
 .color-word {
   color: #AB0232;
   font-weight: 700;
-}
-
-.ademas {
-  text-align: center;
 }
 
 /*----------------------BOTÓN SUBMIT--------------------*/
