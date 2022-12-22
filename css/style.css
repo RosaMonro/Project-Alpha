@@ -52,7 +52,6 @@ h6,
 }
 
 .style-headers {
-  padding: 4.8rem;
   text-align: center;
   color: #AB0232;
 }
@@ -89,6 +88,7 @@ h6,
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .cover__text {
@@ -96,8 +96,6 @@ h6,
   color: #FFFFFF;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  border: green solid 2px;
 }
 
 
@@ -105,7 +103,16 @@ h6,
 
 main {
   padding: 0 15rem;
+  margin: 15rem 0;
 }
+
+
+/*---------------MÁRGENES DE LAS SECTION -------------*/
+
+section {
+  margin: 15rem 0;
+}
+ 
 
 /*-------------------- SOBRE MÍ ----------------------*/
 
