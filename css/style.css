@@ -83,18 +83,21 @@ h6,
 
 /*--------------------PORTADA---------------*/
 
-.cover {
+.bg-cover {
   background-image: url("../imagenes/rosa.png");
-  height: 77rem;
+  background-size: cover;  
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
 }
 
 .cover__text {
   margin: 0px;
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: green solid 2px;
 }
 
 
@@ -117,7 +120,7 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center /*pq no es sufi con justify.content???*/
+  align-items: center 
 }
 
 .icon {
