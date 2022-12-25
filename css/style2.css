@@ -50,19 +50,6 @@ html {
     font-size: 2.6rem;
   }
   
-/*.title__size {
-    font-size: 6.4rem;
-  }
-
-  .subtitle__size {
-    font-size: 4.8rem;
-  }
-
-  el subtítulo tiene 4.8rem
-
-  necesitaré un queri para el nombre y otro para el subtitulo
-  */
-  
   .font-weight--light {
     font-weight: 360;
   }
@@ -95,12 +82,14 @@ main {
 
 section {
   margin: 10rem 0;
+  padding: 0 2.4rem;
 }
  
+
+
+/*---------------- MÁRGENES DEL MAIN -------------*/
+
 /*____________________________________________________________________________________________
-
-*---------------- MÁRGENES DEL MAIN -------------
-
 main {
   padding: 0 15rem;
   margin: 15rem 0;
@@ -134,19 +123,13 @@ ________________________________________________________________________________
 
 
 /*-------------------- SOBRE MÍ ----------------------*/
-/*
-.content-cards {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 8rem;
-}
-*/
+
 .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center 
+  align-items: center;
 }
 
 .icon {
@@ -155,18 +138,71 @@ ________________________________________________________________________________
   width: 99px;
 }
 
+
 /*----------------------MI HISTORIA---------------------*/
 
 /*.content__photo-story {
   display: flex;
-}
-*/
+} */
+
 .bgstory-style {
   background-color: #F5F5F5;
   border-radius: 20px;
-  padding: 5rem;
+  padding: 5rem 5rem;
 }
 
+/*--------------------- QUÉ SÉ HACER ----------------*/
+
+.knowledge__list--style {
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 0;
+  font-size: 2rem;
+  font-weight: 360;
+}
+
+@media only screen and (min-width: 580px) {
+  .title-and-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+  .card__title {
+    flex: 1;
+    padding-left: 5rem;
+  }
+
+  .knowledge__list--style {
+    flex: 2;
+}
+}
+
+@media only screen and (min-width: 950px) {
+  .title-and-ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card__title {
+    padding-left: 0%;
+  }
+}
+
+
+
+ /*
+.content__icon-tool {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-tool {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+}
 
 /*------------------------- MEDIA QUERIES -------------------------*/
 
@@ -184,15 +220,56 @@ ________________________________________________________________________________
   .h4 {
       font-size: 2rem;
   }
-  
 }
 
-@media only screen and (min-width: 800px) {
-  .title__size {
+
+@media only screen and (min-width: 950px) {
+  
+ .title__size {
     font-size: 6.4rem;
   }
 
   .subtitle__size {
     font-size: 4.8rem;
   }
+
+  main {
+      padding: 0 15rem;
+      margin: 15rem 0;
+    }
+
+  section {
+    margin: 15rem 0;
+    padding: 0 0;
+  }
 }
+
+
+@media only screen and (min-width: 580px) {
+  .content-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title-and-text {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 950px) {
+  .content-cards{
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 2rem;
+ }
+ 
+ .card {
+   flex-direction: column;
+ }
+ }
