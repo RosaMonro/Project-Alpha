@@ -155,8 +155,7 @@ section {
   height: 95px;
   width: 99px;
   box-shadow: -5px -5px 10px 0 #AB0232;
-
-}
+} 
 
 @media only screen and (min-width: 580px) {
   .content-cards {
@@ -358,6 +357,7 @@ section {
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin: 15px 0;
  }
 
  label {
@@ -394,7 +394,6 @@ section {
 form {
   width: 80%;
 }
-
 
 
  @media only screen and (min-width: 768px) {
