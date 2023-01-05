@@ -104,6 +104,7 @@ section {
   align-items: center;
 }
 
+
 @media only screen and (min-width: 600px) {
   .title__size {
     font-size: 5.4rem;
@@ -117,20 +118,6 @@ section {
       font-size: 2rem;
   }
 }
-
-@keyframes circle-in-top-right {
-  from {
-    clip-path: circle(0%);
-  }
-  to {
-    clip-path: circle(150% at top right);
-  }
-}
-
-[transition-style="in:circle:top-right"] {
-  animation: 6s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
-}
-
 
 @media only screen and (min-width: 950px) {
   
@@ -153,6 +140,22 @@ section {
   }
 }
 
+
+/*----------------------ANIMACIÖN---------------*/
+
+@keyframes circle-in-top-right {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(150% at top right);
+  }
+}
+
+[transition-style="in:circle:top-right"] {
+  animation: 6s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
+}
+
 /*-------------------------------- SOBRE MÍ -------------------------------*/
 
 .card {
@@ -167,6 +170,7 @@ section {
   fill: #AB0232;
   height: 95px;
   width: 99px;
+  border-radius: 5px;
   box-shadow: -5px -5px 10px 0 #AB0232;
 } 
 
@@ -204,16 +208,73 @@ section {
 /*-------------------------------MI HISTORIA------------------------------*/
 
 .content__photo-story {
-  display: flex;
-} 
+  display:grid;
+  grid-template-rows: 2fr 5fr;
+  grid-gap: 2rem;
+}
+
+.content__photo {
+  background-image: url("../imagenes/rosa-foto.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+
+}
 
 .bgstory-style {
   background-color: #F5F5F5;
   border-radius: 20px;
-  padding: 5rem 5rem;
+  padding: 4rem 4rem;
 }
 
 
+
+@media only screen and (min-width: 390px) {
+  .content__photo-story {
+    grid-template-rows: 4fr 5fr;
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  .content__photo-story {
+    grid-template-rows: 5fr 5fr;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .content__photo {
+    background-image: url("../imagenes/foto rosa.jpg");
+  }
+
+  .content__photo-story {
+    grid-template-rows: 5fr 6fr;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .content__photo-story {
+    grid-template-rows: none;
+    grid-template-columns: 4fr 5fr;
+  }
+} 
+
+@media only screen and (min-width: 950px) {
+  .content__photo-story {
+    grid-template-columns: none;
+    grid-template-rows: 5fr 5fr;
+  }
+}
+
+@media only screen and (min-width: 1178px) {
+  .content__photo {
+    background-image: url("../imagenes/rosa-foto.jpg");
+  }
+
+  .content__photo-story {
+    grid-template-rows: none;
+    grid-template-columns: 3fr 5fr;
+  }
+} 
 /*------------------------- QUÉ SÉ HACER (CONOCIMIENTOS) --------------------*/
 
 .knowledge__list--style {
@@ -376,9 +437,16 @@ section {
   margin: 8px 0 0 0;
  }
 
+ textarea {
+  height: 7rem;
+ }
+
 .aceptar {
   display: inline-block;
   margin: 8px 0 0 0;
+}
+.link-priv {
+  color: #FFFFFF;  
 }
 
  [type="submit"] {
