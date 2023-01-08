@@ -141,7 +141,7 @@ section {
 }
 
 
-/*----------------------ANIMACIÖN---------------*/
+/*----------------------ANIMACIÓN---------------*/
 
 @keyframes circle-in-top-right {
   from {
@@ -218,7 +218,6 @@ section {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-
 }
 
 .bgstory-style {
@@ -227,7 +226,11 @@ section {
   padding: 4rem 4rem;
 }
 
-
+.line {
+  width: 9rem;
+  height: 4px;
+  background-color: #AB0232;
+}
 
 @media only screen and (min-width: 390px) {
   .content__photo-story {
@@ -275,6 +278,7 @@ section {
     grid-template-columns: 3fr 5fr;
   }
 } 
+
 /*------------------------- QUÉ SÉ HACER (CONOCIMIENTOS) --------------------*/
 
 .knowledge__list--style {
