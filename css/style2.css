@@ -134,11 +134,13 @@ section {
 
 
 @media only screen and (min-width: 600px) {
-  .title__size {
+  .title__size,
+  .title__size__cover {
     font-size: 5.4rem;
   }
 
-  .subtitle__size {
+  .subtitle__size 
+  {
     font-size: 3.6rem;
   }
 
@@ -149,7 +151,8 @@ section {
 
 @media only screen and (min-width: 950px) {
   
- .title__size {
+ .title__size,
+ .title__size__cover {
     font-size: 6.4rem;
   }
 
@@ -158,6 +161,17 @@ section {
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  
+  .title__size__cover {
+     font-size: 8rem;
+     font-weight: 700;
+   }
+ 
+   .subtitle__size {
+     font-size: 6.4rem;
+   }
+ }
 
 /*----------------------ANIMACIÓN---------------*/
 
