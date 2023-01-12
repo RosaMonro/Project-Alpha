@@ -42,7 +42,8 @@ html {
     font-size: 1.4rem;
   }
 
-  .title__size {
+  .title__size,
+  .title__size__cover {
     font-size: 3.6rem;
   }
 
@@ -127,9 +128,11 @@ section {
 
 .cover__text {
   margin: 0px;
+  padding: 0 1.5rem;
   color: #FFFFFF;
   text-align: center;
   align-items: center;
+  text-shadow: 5px 5px 5px #1C1C1E;
 }
 
 
@@ -185,7 +188,7 @@ section {
 }
 
 [transition-style="in:circle:top-right"] {
-  animation: 6s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
+  animation: 8s cubic-bezier(.25, 1, .30, 1) circle-in-top-right both;
 }
 
 /*-------------------------------- SOBRE MÍ -------------------------------*/
@@ -467,6 +470,8 @@ section {
   flex-direction: column;
   text-align: left;
   margin: 15px 0;
+  width: 80%;
+  max-width: 700px;
  }
 
  label {
@@ -506,14 +511,3 @@ section {
   border: #FFFFFF 0.2rem solid;
   color: #FFFFFF;
 }
-
-form {
-  width: 80%;
-}
-
-
-@media only screen and (min-width: 950px) {
-  form {
-    width: 700px;
-  }
- }
