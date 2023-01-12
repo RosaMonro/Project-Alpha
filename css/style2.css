@@ -474,6 +474,12 @@ section {
 
  textarea {
   height: 7rem;
+  border-radius: 5px;
+ }
+
+ input {
+  border-radius: 5px;
+  border: none;
  }
 
 .aceptar {
@@ -504,4 +510,24 @@ section {
   background-color: #AF0F3C;
   border: #FFFFFF 0.2rem solid;
   color: #FFFFFF;
+}
+
+.vector-tlf {
+  height: 20px;
+  width: 20px;
+}
+
+.vector-mail {
+  height: 20px;
+  width: 30px;
+}
+
+
+@media only screen and (min-width: 950px) {
+  .contactinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+  }
 }
