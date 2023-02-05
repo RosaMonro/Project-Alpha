@@ -43,7 +43,7 @@ html {
   }
 
   .title__size,
-  .title__size__cover {
+  .title-cover__size {
     font-size: 3.6rem;
   }
 
@@ -132,7 +132,7 @@ section {
 
 @media only screen and (min-width: 613px) {
   .title__size,
-  .title__size__cover {
+  .title-cover__size {
     font-size: 5.4rem;
   }
 
@@ -149,7 +149,7 @@ section {
 @media only screen and (min-width: 950px) {
   
  .title__size,
- .title__size__cover {
+ .title-cover__size {
     font-size: 6.4rem;
   }
 
@@ -160,7 +160,7 @@ section {
 
 @media only screen and (min-width: 1300px) {
   
-  .title__size__cover {
+  .title-cover__size {
      font-size: 8rem;
      font-weight: 700;
    }
@@ -348,7 +348,7 @@ section {
 
 /*--------------------------- QUÉ SÉ HACER (HERRAMIENTAS) -------------------------*/
 
-  .li-icon-tool {
+  .li__icon-tool {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -369,13 +369,13 @@ section {
       flex-wrap: wrap;
   }
 
-    .li-icon-tool {
+    .li__icon-tool {
       padding: 0;
       margin: 0;
       flex-basis: 33.33%;
     }
 
-    .li-icon-tool,
+    .li__icon-tool,
     .icon-tool {
       display: flex;
       flex-direction: column;
@@ -392,13 +392,13 @@ section {
       flex-wrap: nowrap;
   }
   
-  .li-icon-tool {
+  .li__icon-tool {
     padding: 0;
     margin: 0;
     flex-basis: 0;
   }
 
-   .li-icon-tool,
+   .li__icon-tool,
     .icon-tool {
       display: flex;
       flex-direction: column;
