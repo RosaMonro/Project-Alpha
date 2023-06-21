@@ -339,6 +339,7 @@ section {
   .title-and-ul {
     flex-direction: column;
     gap: 0;
+    flex: 1;
   }
 
   .card__title {
